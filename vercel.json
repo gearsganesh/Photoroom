@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "rustup target add wasm32-unknown-unknown && cargo install trunk --locked",
-  "buildCommand": "cd apps/photocraft-web && trunk build --release",
+  "installCommand": "true",
+  "buildCommand": "bash deploy/vercel-build.sh",
   "outputDirectory": "dist/web",
   "cleanUrls": true
 }
